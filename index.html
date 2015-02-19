@@ -108,7 +108,7 @@ layout: default
 							<div class="icon fa fa-map-marker"></div>
 							<div class="info">
 								<h3>Santiago, Chile.</h3>
-								<span>Holanda 895</span>
+								<span>Av. Libertador Bernardo O'Higgins 227</span>
 							</div>
 						</div>
 					</div>
@@ -435,55 +435,45 @@ layout: default
 				<!--===============================-->
 				<section id="faq" class="row">
 					<div class="col-sm-12">
-						<div class="section-header text-right">
-							<h2>F.A.Q</h2>
-							<h4>Awesome section description goes here.</h4>
+						<div class="section-header">
+							<h2>Recursos</h2>
+							<h4>ALVI: bajada de recursos</h4>
 						</div>
 					</div>
-					<div class="col-sm-6">
-						<ul class="accordion-group">
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-						        </div>
-						    </li>
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-						        </div>
-						    </li>
-						</ul>
-					</div>
-					<div class="col-sm-6">
-						<ul class="accordion-group">
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-						        </div>
-						    </li>
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-						        </div>
-						    </li>
-						</ul>
-					</div>
+
+						<div class="col-sm-6">
+						  <ul class="accordion-group">
+				  			{% for post in site.categories.recursos-right %}
+							    	<li class="accordion">
+							    		<a class="accordion-heading">
+							        	<h4 class="accordion-title">{{ post.title }}</h4>
+					              <p class="meta">{{ post.date | date_to_string }}</p>
+							        	<span class="fa fa-plus-circle pull-right"></span>
+							        </a>
+							        <div class="accordion-body">
+							        	{{ post.content }}
+							        </div>
+									</li>
+								{% endfor %}
+						  </ul>
+						</div>
+
+						<div class="col-sm-6">
+						  <ul class="accordion-group">
+				  			{% for post in site.categories.recursos-left %}
+							    	<li class="accordion">
+							    		<a class="accordion-heading">
+							        	<h4 class="accordion-title">{{ post.title }}</h4>
+					              <p class="meta">{{ post.date | date_to_string }}</p>
+							        	<span class="fa fa-plus-circle pull-right"></span>
+							        </a>
+							        <div class="accordion-body">
+							        	{{ post.content }}
+							        </div>
+									</li>
+								{% endfor %}
+						  </ul>
+						</div>
 				</section>
 				<!--==========-->
 

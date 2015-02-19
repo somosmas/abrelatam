@@ -208,8 +208,7 @@ input[type='submit']:active {
 }
 
 .header-menu > .box {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	min-height: 75px;
 }
 
 .header-menu.sticky > .box {
@@ -358,7 +357,7 @@ Navigation =========*/
 
 .navbar-nav {
 	float: right;
-	margin: 1rem 0;
+	margin: 17px 0;
 }
 
 .navbar-nav > li {
@@ -393,7 +392,7 @@ Navigation =========*/
     line-height: 4rem;
     font-size: 3.8rem;
     font-weight: 700;
-    padding: 1rem 0;
+    padding: 5px 0;
 }
 
 .navbar-brand span {
@@ -406,7 +405,7 @@ Navigation =========*/
 }
 
 .navbar-brand.logo > img {
-    max-height: 80px;
+    max-height: 65px;
     width: auto;
 }
 
@@ -578,6 +577,9 @@ Accordion ==========*/
 	padding-top: 20px;
 }
 
+.accordion-body img {
+	max-width: 100%;
+}
 
 
 /*--------------------
