@@ -14,12 +14,12 @@ div.fancy-select ul.options li.selected, div.fancy-select ul.options li.selected
 a, .accordion-heading span, .speaker-contacts > .contact, 
 .table-features li.fa-check-circle, .owl-btn.prev,
 .owl-btn.next, div.fancy-select ul.options li.hover {
-	color: #0ECABF; /* <- Paste here your prefered color */
+	color: #ABED68; /* <- Paste here your prefered color */
 }
 
 .speaker:hover .speaker-photo, .speaker-contacts > .contact, 
 .social-icons li a:hover, .gotop:hover, .speaker-contacts > .contact:hover {
-	border-color: #0ECABF; /* <- Paste here your prefered color */
+	border-color: #ABED68; /* <- Paste here your prefered color */
 }
 
 
