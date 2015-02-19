@@ -2,7 +2,8 @@
 title: Abrelatam
 # email: info@ciudadanointeligente.org
 description: Abrelatam 2015
-baseurl: "http://abrelatam.org" # the subpath of your site, e.g. /blog/
+baseurl: "http://ciudadanointeligente.github.io/abrelatam/"
+# "http://abrelatam.org"
 twitter_username: ciudadanoi
 github_username:  ciudadanointeligente
 # analytics: 'UA-41822715-1'
