@@ -1,0 +1,11 @@
+# site settings
+title: Abrelatam
+# email: info@ciudadanointeligente.org
+description: Abrelatam 2015
+baseurl: "http://abrelatam.org" # the subpath of your site, e.g. /blog/
+twitter_username: ciudadanoi
+github_username:  ciudadanointeligente
+# analytics: 'UA-41822715-1'
+
+# build settings
+markdown: kramdown
