@@ -19,7 +19,7 @@ a, .accordion-heading span, .speaker-contacts > .contact,
 
 .speaker:hover .speaker-photo, .speaker-contacts > .contact, 
 .social-icons li a:hover, .gotop:hover, .speaker-contacts > .contact:hover {
-	border-color: #2ecc71; /* <- Paste here your prefered color */
+	border-color: #0ECABF; /* <- Paste here your prefered color */
 }
 
 
