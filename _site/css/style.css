@@ -14,7 +14,7 @@ div.fancy-select ul.options li.selected, div.fancy-select ul.options li.selected
 a, .accordion-heading span, .speaker-contacts > .contact, 
 .table-features li.fa-check-circle, .owl-btn.prev,
 .owl-btn.next, div.fancy-select ul.options li.hover {
-	color: #2ecc71; /* <- Paste here your prefered color */
+	color: #0ECABF; /* <- Paste here your prefered color */
 }
 
 .speaker:hover .speaker-photo, .speaker-contacts > .contact, 
@@ -185,6 +185,10 @@ input[type='submit']:active {
 	background: url(../images/bg-menu.png);
 }
 
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: rgba(74, 129, 238, 0.14);
+}
+
 .header-menu {
 	position: absolute;
     width: 100%;
@@ -216,7 +220,7 @@ input[type='submit']:active {
 	padding-bottom: 0;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	border-bottom: 1px solid #efefef;
+	border-bottom: 1px solid #5D9999;
 }
 
 .header-bg {
