@@ -252,6 +252,7 @@ input[type='submit']:active {
 
 .content section#features:first-child {
 	padding: 40px 0;
+	border-bottom: 1px solid #F0F0F0;
 }
 
 .content section + section:before {
@@ -793,6 +794,12 @@ Pricing Tables =====*/
 
 /*--------------------
 Social Icons =======*/
+
+.social .social-icons {
+	margin: -11px auto;
+	width: 260px;
+}
+
 .social-icons {
 	margin: 0 0 20px 0;
 	padding: 0;
@@ -960,8 +967,11 @@ Preloader ==========*/
 /*--------------------
 Copyrights =========*/
 .copyrights {
-	margin-top: 15px;
 	font-size: 1.2rem;
 	line-height: 1.4em;
 	color: #BBBAC0;
+}
+
+.copyrights img {
+	margin-left: 60px;
 }
