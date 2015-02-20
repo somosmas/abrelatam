@@ -67,7 +67,7 @@ layout: default
 				<div class="container">
 					<div class="row">
 						<div class="blk">
-							<h1>Alvi:<br/>Lorem ipsum</h1>
+							<h1>Un encuentro abierto<br/>Por una región abierta</h1>
 						</div>
 					</div>
 					<!-- Boton para ir a registrarse -->
@@ -434,45 +434,72 @@ layout: default
 				<!--===============================-->
 				<section id="faq" class="row">
 					<div class="col-sm-12">
-						<div class="section-header">
-							<h2>Recursos</h2>
-							<h4>ALVI: bajada de recursos</h4>
+						<div class="section-header text-right">
+							<h2>Preguntas Frecuentes</h2>
+							<h4>Lo que necesitas saber sobre nosotros</h4>
 						</div>
 					</div>
+					<div class="col-sm-6">
+						<ul class="accordion-group">
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">¿Qué son datos abiertos?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	<p>Los datos abiertos (u open data en inglés) son datos que son libres de utilizar, reutilizar, y redistribuir. La definición completa contiene detalles precisos sobre el significado, pero a modo de resumen, se listan las características más importantes:</p>
 
-						<div class="col-sm-6">
-						  <ul class="accordion-group">
-				  			{% for post in site.categories.recursos-right %}
-							    	<li class="accordion">
-							    		<a class="accordion-heading">
-							        	<h4 class="accordion-title">{{ post.title }}</h4>
-					              <p class="meta">{{ post.date | date_to_string }}</p>
-							        	<span class="fa fa-plus-circle pull-right"></span>
-							        </a>
-							        <div class="accordion-body">
-							        	{{ post.content }}
-							        </div>
-									</li>
-								{% endfor %}
-						  </ul>
-						</div>
+									<p> - <strong>Disponibilidad y Acceso:</strong> deben estar disponibles en su totalidad y a un costo de reproducción razonable, preferiblemente descargable de manera gratuita en Internet.</p>
+									<p> - <strong>Reutilización y Redistribución:</strong> debe ser posible realizar productos derivados, combinarlos con otras fuentes de información,  y distribuirlos de forma gratuita.</p>
+									<p> - <strong>Ausencia de restricción tecnológica:</strong> no debe haber ningún obstáculo tecnológico para acceder, reusar y redistribuir. Esto es posible realizarlo publicando los datos en un formato de datos abierto.</p>
+									<p>Nota: Formato abierto es un formato cuya especificación esté disponible públicamente y de manera gratuita, además, para su uso no se deben imponer restricciones de tipo monetario u otras.<p>
 
-						<div class="col-sm-6">
-						  <ul class="accordion-group">
-				  			{% for post in site.categories.recursos-left %}
-							    	<li class="accordion">
-							    		<a class="accordion-heading">
-							        	<h4 class="accordion-title">{{ post.title }}</h4>
-					              <p class="meta">{{ post.date | date_to_string }}</p>
-							        	<span class="fa fa-plus-circle pull-right"></span>
-							        </a>
-							        <div class="accordion-body">
-							        	{{ post.content }}
-							        </div>
-									</li>
-								{% endfor %}
-						  </ul>
-						</div>
+									<p> - <strong>Participación universal:</strong> cualquier persona puede utilizar, reutilizar y redistribuir, sin restricciones en el campo de acción de los datos. Por ejemplo no es posible utilizar restricciones como “no comercial”, que impiden el uso comercial; o restricciones como “solo educativo”, que impone limitaciones de uso para ciertos fines.</p>
+									<p> Somos los ciudadanos los que tenemos la posibilidad de crear servicios de interés para la ciudadanía y/o el Gobierno. Éste debe fortalecer su rol como proveedor de información, para permitir así, que la sociedad pueda generar servicios a partir de la  reutilización de los datos abiertos disponibles. Dependiendo la naturaleza de los datos, el ciudadano que los reutilice debería tomar los recaudos necesarios para que a través del nuevo servicio o de la información generada se cumplen determinadas pautas tales como:</p>
+
+									<p> * El contenido de la información no es alterado.</p>
+									<p> * Que no se desnaturaliza el sentido de la información.</p>
+									<p> * Que se cita la fuente.</p>
+									<p> * Que se menciona la fecha de la última actualización.</p>
+						        </div>
+						    </li>
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">¿Qué es ABRELATAM y ConDatos?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	<p>ABRELATAM y ConDatos son los eventos donde la comunidad de actores de la sociedad civil, gobierno, academia, desarrolladores, empresas e individuos que trabajan para los Datos Abiertos en América Latina se encuentran para entablar un diálogo sobre el estado e impacto de datos abiertos en la región.</p>
+						        </div>
+						    </li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="accordion-group">
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">¿Cuál es el formato de estos eventos?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	<p><strong>ABRELATAM</strong> es una desconferencia donde diversos actores (gobierno, sociedad civil, expertos) participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos abiertos, privacidad y nuevas formas de trabajo con los datos.</p> 
+						        	<p><strong>ConDatos</strong> es una conferencia que reúne a los expertos e instituciones públicas, privadas y de la sociedad civil donde los principales actores de la región presentan, debaten y discuten sobre aspectos clave en materia de políticas de datos abiertos, gobierno abierto, innovación cívica para retos públicos, privacidad y nuevas formas de trabajo con datos abiertos.</p>
+						        </div>
+						    </li>
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">¿Cómo puedo participar?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	<p>Ambos eventos esperan propuestas de sus participantes y eventualmente se comunicarán las formas en que los mismos pueden participar, sea presentando sesiones, paneles o formas no previstas. Lamentablemente ambos eventos tendrán un cupo de participantes máximo debido al espacio físico disponible.</p>
+
+									<p><strong>¿Hay recursos para poder financiar participantes?</p></strong>
+									<p>Existen algunos recursos aunque limitados. Tendremos más información en las próximas semanas.</p>
+						        </div>
+						    </li>
+						</ul>
+					</div>
 				</section>
 				<!--==========-->
 
