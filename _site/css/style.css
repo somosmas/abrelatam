@@ -22,6 +22,19 @@ a, .accordion-heading span, .speaker-contacts > .contact,
 	border-color: #ABED68; /* <- Paste here your prefered color */
 }
 
+.btn {
+	height: 6rem;
+	font-size: 2.5rem;
+	color: #ffffff;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+	transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	background-color: #ABED68;
+	border-radius: 5px;
+	padding: 1rem 1.5rem;
+}
 
 
 /*--------------------
