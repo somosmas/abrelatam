@@ -66,11 +66,12 @@
 							<h1>Alvi:<br/>Lorem ipsum</h1>
 						</div>
 					</div>
-					<div class="row">
+					<!-- Boton para ir a registrarse -->
+<!-- 					<div class="row">
 						<div class="blk">
 							<input type="submit" value="Register" name="submit" id="goregister">
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
@@ -103,7 +104,7 @@
 							<div class="icon fa fa-map-marker"></div>
 							<div class="info">
 								<h3>Santiago, Chile.</h3>
-								<span>Av. Libertador Bernardo O'Higgins 227</span>
+								<span>Av. Libertador Bernardo O'Higgins 227.</span>
 							</div>
 						</div>
 					</div>
@@ -111,8 +112,8 @@
 						<div class="event-info">
 							<div class="icon fa fa-calendar"></div>
 							<div class="info">
-								<h3>7 y 8</h3>
-								<span>Septiembre 2015</span>
+								<h3>7 y 8 de Septiembre</h3>
+								<span>2015</span>
 							</div>
 						</div>
 					</div>
@@ -120,7 +121,7 @@
 						<div class="event-info">
 							<div class="icon fa fa-microphone"></div>
 							<div class="info">
-								<h3>6 Speakers</h3>
+								<h3>Desconferencia de datos abiertos</h3>
 								<span>Best specialists.</span>
 							</div>
 						</div>
@@ -129,8 +130,7 @@
 						<div class="event-info">
 							<div class="icon fa fa-users"></div>
 							<div class="info">
-								<h3>200 Seats</h3>
-								<span>Hurry up, register!</span>
+								<h3>Un encuentro de la sociedad civil latinoamericana</h3>
 							</div>
 						</div>
 					</div>
@@ -658,6 +658,27 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 
 		<!--== Javascript Files ==-->
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <script>
+			function initialize() {
+			  var myLatlng = new google.maps.LatLng(-33.438197, -70.638064);
+			  var mapOptions = {
+			    zoom: 15,
+			    center: myLatlng
+			  }
+			  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+			  var marker = new google.maps.Marker({
+			      position: myLatlng,
+			      map: map,
+			      title: 'Hello World!'
+			  });
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
 		<script src="js/jquery-2.1.0.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.scrollTo.js"></script>
