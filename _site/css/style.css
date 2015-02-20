@@ -8,18 +8,18 @@ input[type='submit'], .nav li.current a, .speaker-contacts > .contact:hover,
 .owl-page.active span, .owl-page.active span:hover,
 .preloader, .preloader:before, .preloader:after, div.fancy-select div.trigger.open,
 div.fancy-select ul.options li.selected, div.fancy-select ul.options li.selected.hover  {
-	background-color: #2ecc71; /* <- Paste here your prefered color */
+	background-color: #ABED68; /* <- Paste here your prefered color */
 }
 
 a, .accordion-heading span, .speaker-contacts > .contact, 
 .table-features li.fa-check-circle, .owl-btn.prev,
 .owl-btn.next, div.fancy-select ul.options li.hover {
-	color: #2ecc71; /* <- Paste here your prefered color */
+	color: #ABED68; /* <- Paste here your prefered color */
 }
 
 .speaker:hover .speaker-photo, .speaker-contacts > .contact, 
 .social-icons li a:hover, .gotop:hover, .speaker-contacts > .contact:hover {
-	border-color: #2ecc71; /* <- Paste here your prefered color */
+	border-color: #ABED68; /* <- Paste here your prefered color */
 }
 
 
@@ -181,6 +181,14 @@ input[type='submit']:active {
 	z-index: 55;
 }
 
+#menu .box {
+	background: url(../images/bg-menu.png);
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: rgba(74, 129, 238, 0.14);
+}
+
 .header-menu {
 	position: absolute;
     width: 100%;
@@ -204,8 +212,7 @@ input[type='submit']:active {
 }
 
 .header-menu > .box {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	min-height: 75px;
 }
 
 .header-menu.sticky > .box {
@@ -213,7 +220,7 @@ input[type='submit']:active {
 	padding-bottom: 0;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	border-bottom: 1px solid #efefef;
+	border-bottom: 1px solid #5D9999;
 }
 
 .header-bg {
@@ -354,7 +361,7 @@ Navigation =========*/
 
 .navbar-nav {
 	float: right;
-	margin: 1rem 0;
+	margin: 17px 0;
 }
 
 .navbar-nav > li {
@@ -373,7 +380,7 @@ Navigation =========*/
 	font-size: 1.5rem;
 	font-weight: bold;
 	border-radius: 2px;
-	color: #555555;
+	color: #FFFFFF;
 	overflow: hidden;
 }
 
@@ -389,7 +396,7 @@ Navigation =========*/
     line-height: 4rem;
     font-size: 3.8rem;
     font-weight: 700;
-    padding: 1rem 0;
+    padding: 5px 0;
 }
 
 .navbar-brand span {
@@ -402,7 +409,7 @@ Navigation =========*/
 }
 
 .navbar-brand.logo > img {
-    max-height: 40px;
+    max-height: 65px;
     width: auto;
 }
 
@@ -574,6 +581,9 @@ Accordion ==========*/
 	padding-top: 20px;
 }
 
+.accordion-body img {
+	max-width: 100%;
+}
 
 
 /*--------------------
@@ -704,7 +714,7 @@ Event Info =========*/
 
 .event-info h3 {
 	margin: 0;
-	font-size: 2rem;
+	font-size: 18px;
 }
 
 .event-info span {
