@@ -11,7 +11,7 @@ div.fancy-select ul.options li.selected, div.fancy-select ul.options li.selected
 	background-color: #ABED68; /* <- Paste here your prefered color */
 }
 
-a, .accordion-heading span, .speaker-contacts > .contact, 
+.accordion-heading span, .speaker-contacts > .contact, 
 .table-features li.fa-check-circle, .owl-btn.prev,
 .owl-btn.next, div.fancy-select ul.options li.hover {
 	color: #ABED68; /* <- Paste here your prefered color */
@@ -34,6 +34,9 @@ a, .accordion-heading span, .speaker-contacts > .contact,
 	background-color: #ABED68;
 	border-radius: 5px;
 	padding: 1rem 1.5rem;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
 }
 
 
@@ -59,11 +62,12 @@ a, a:hover, a:active, a:focus {
 
 a {
     text-decoration:none;
+    color: #4A81EE;
 }
 
 a:hover {
-	color: #bbbac0;
-    text-decoration:none;
+	color: #0ECABF;
+	text-decoration:none;
 }
 
 p {
@@ -233,7 +237,6 @@ input[type='submit']:active {
 	padding-bottom: 0;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	border-bottom: 1px solid #5D9999;
 }
 
 .header-bg {
@@ -987,4 +990,11 @@ Copyrights =========*/
 
 .copyrights img {
 	margin-left: 60px;
+}
+
+
+/*FEED Noticias*/
+
+.nodisplay {
+	display: none;
 }

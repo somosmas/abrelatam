@@ -145,7 +145,7 @@ layout: default
 				<!--===============================-->
 				<!--== Schedule ===================-->
 				<!--===============================-->
-				<section id="schedule" class="row">
+<!-- 				<section id="schedule" class="row">
 					<div class="col-md-7 col-sm-12">
 						<div class="content-tabs">
 							<ul class="nav nav-tabs">
@@ -226,13 +226,18 @@ layout: default
 						</div>
 					</div>
 					<div class="col-md-5 col-sm-12">
-						<h2>Sobre datos abiertos...</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, error, et. Cupiditate, necessitatibus, ab, nemo commodi quod unde facere doloribus voluptatibus recusandae quibusdam molestiae excepturi corrupti quae! Dolor, deserunt, consequuntur.</p>
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Vero, deleniti, provident beatae illo accusantium</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-						</ul>
+					</div>
+				</section> -->
+
+				<section id="news" class="row">
+					<div class="col-md-12 col-sm-12">
+						{% include feed-noticias.html %}
+					</div>
+				</section>
+
+				<section id="blog" class="row">
+					<div class="col-md-12 col-sm-12">
+						{% include feed-blog.html %}
 					</div>
 				</section>
 				<!--==========-->
@@ -446,8 +451,6 @@ layout: default
 				<!--===============================-->
 				<section id="faq" class="row">
 					<div class="col-sm-12">
-<<<<<<< HEAD
-=======
 <!-- Despliegue de posts en acordion -->
 <!-- 						<div class="section-header">
 							<h2>Recursos</h2>
@@ -488,7 +491,6 @@ layout: default
 								{% endfor %}
 						  </ul>
 						</div> -->
->>>>>>> FETCH_HEAD
 						<div class="section-header text-right">
 							<h2>Preguntas Frecuentes</h2>
 							<h4>Lo que necesitas saber sobre nosotros</h4>
@@ -734,7 +736,6 @@ layout: default
 
     </script>
 
-		<script src="js/jquery-2.1.0.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.scrollTo.js"></script>
 		<script src="js/jquery.nav.js"></script>
