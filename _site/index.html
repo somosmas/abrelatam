@@ -22,7 +22,7 @@
     <link href='//fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
 
     <!-- JS -->
-    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.js"></script>
 
 </head>
 
@@ -343,49 +343,21 @@
 							</script>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<script type="text/javascript" src="/js/jquery.jfeed.js"></script>
+						<script type="text/javascript" src="//momentjs.com/downloads/moment.min.js"></script>
+<script type="text/javascript" src="/js/jquery.rss.js"></script>
 
 <script type="text/javascript">
-(function() {
-    jQuery.getFeed({
-        url: 'http://blog.abrelatam.org/feed/',
-        success: function(feed) {
-        
-            jQuery('#result').append('<h2>'
-            + '<a href="'
-            + feed.link
-            + '">'
-            + feed.title
-            + '</a>'
-            + '</h2>');
-            
-            var html = '';
-            
-            for(var i = 0; i < feed.items.length && i < 5; i++) {
-            
-                var item = feed.items[i];
-                
-                html += '<h3>'
-                + '<a href="'
-                + item.link
-                + '">'
-                + item.title
-                + '</a>'
-                + '</h3>';
-                
-                html += '<div class="updated">'
-                + item.updated
-                + '</div>';
-                
-                html += '<div>'
-                + item.description
-                + '</div>';
-            }
-            
-            jQuery('#result').append(html);
-        }    
-    });
-});
+jQuery(function($) {
+    $("#result").rss(
+        "http://blog.abrelatam.org/feed/", 
+        {
+            layoutTemplate: '<ul class="list-unstyled">{entries}</ul>',
+            entryTemplate: '<li><h3><a href="{url}" target="_blank">{title}</h3></a><p>{shortBodyPlain}</p></li>',
+            limit: 5,
+            outputMode: 'json_xml'
+        }
+    )
+})
 </script>
 
 <div id="result"></div>
