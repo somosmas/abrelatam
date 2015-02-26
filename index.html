@@ -3,45 +3,42 @@ layout: default
 ---	
 
 <header id="header">
-	{% include menu.html %}
-
-	<!--== Site Description ==-->
-	<div class="header-cta">
-		<div class="container">
-			<div class="row">
-				<div class="blk">
-					<h1>Un encuentro abierto<br/>Por una región abierta</h1>
+			
+			{% include menu.html %}
+			<!--== Site Description ==-->
+			<div class="header-cta">
+				<div class="container">
+					<div class="row">
+						<div class="blk">
+							<h1>Un encuentro abierto<br/>Por una región abierta</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="blk">
+							<input type="submit" value="Register" name="submit" id="goregister">
+						</div>
+					</div>
 				</div>
 			</div>
-			<!-- Boton para ir a registrarse -->
-<!-- 					<div class="row">
-				<div class="blk">
-					<input type="submit" value="Register" name="submit" id="goregister">
+
+			<div class="header-bg">
+				<div id="preloader">
+					<div class="preloader"></div>
 				</div>
-			</div> -->
-		</div>
-	</div>
+				<div class="main-slider" id="main-slider">
 
-	<div class="header-bg">
-		<div id="preloader">
-			<div class="preloader"></div>
-		</div>
-		<div class="main-slider" id="main-slider">
+					<!--== Main Slider ==-->
+					<ul class="slides">
+						<li><img src="images/demo/bg-slide-01.jpg" alt="Slide Image"/></li>
+						<li><img src="images/demo/bg-slide-02.jpg" alt="Slide Image 2"/></li>
+					</ul>
 
-			<!--== Main Slider ==-->
-			<ul class="slides">
-				<li><img src="images/demo/bg-slide-01.jpg" alt="Slide Image"/></li>
-				<li><img src="images/demo/bg-slide-02.jpg" alt="Slide Image 2"/></li>
-			</ul>
-
-		</div>
-	</div>
-</header>
+				</div>
+			</div>
+		</header>
 
 		<div class="content">
 			<div class="container box">
-
-
 				<!--===============================-->
 				<!--== Features ===================-->
 				<!--===============================-->
@@ -83,159 +80,11 @@ layout: default
 						</div>
 					</div>
 				</section>
+				<!--==========-->
 
 				{% include share-buttons.html %}
 
-				<section id="blog" class="row">
-					<div class="col-md-12 col-sm-12">
-						<div class="section-header text-center">
-							<h2>Blog</h2>
-							<h4>Que esta pasando en la Comunidad AbreLatam</h4>
-						</div>
-						<div class="text-width">
-						{% include feed-blog.html %}
-						</div>
-					</div>
-				</section>
-
-				<section id="subscribe" class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-left">
-							<h2>Suscríbete</h2>
-							<h4>Recibe toda la información y novedades.</h4>
-						</div>
-					</div>
-					<div class="col-sm-12">					
-						{% include subscribe-form.html %}
-					</div>
-				</section>
-
-				<section id="speakers" class="row separated">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2>Temas</h2>
-							<h4>Estos son sólo algunos de los temas que vamos a tratar en #Abrelatam15</h4>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="speaker">
-							<div class="speaker-info">
-								<div class="speaker-photo">
-									<img src="images/demo/speakers/speaker-01.jpg" alt="Speaker 1">
-								</div>								
-								<div class="speaker-contacts">
-									<a href="#" class="contact pull-left fa fa-facebook"></a>
-									<a href="#" class="contact pull-right fa fa-twitter"></a>
-								</div>
-							</div>
-							<h3>Apertura de datos</h3>
-							<p>Estrategias y experiencias para que los gobiernos abran sus datos.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="speaker">
-							<div class="speaker-info">
-								<div class="speaker-photo">
-									<img src="images/demo/speakers/speaker-02.jpg" alt="Speaker 2">
-								</div>
-								<div class="speaker-contacts">
-									<a href="#" class="contact pull-left fa fa-facebook"></a>
-									<a href="#" class="contact pull-right fa fa-twitter"></a>
-								</div>
-							</div>
-							<h3>Bases de datos</h3>
-							<p>Calidad, formato y periodicidad de los datos.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="speaker">
-							<div class="speaker-info">
-								<div class="speaker-photo">
-									<img src="images/demo/speakers/speaker-03.jpg" alt="Speaker 3">
-								</div>
-								<div class="speaker-contacts">
-									<a href="#" class="contact pull-left fa fa-facebook"></a>
-									<a href="#" class="contact pull-right fa fa-twitter"></a>
-								</div>
-							</div>
-							<h3>Financiamiento</h3>
-							<p>Claves para emprender con un proyecto de datos abiertos.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="speaker">
-							<div class="speaker-info">
-								<div class="speaker-photo">
-									<img src="images/demo/speakers/speaker-04.jpg" alt="Speaker 4">
-								</div>
-								<div class="speaker-contacts">
-									<a href="#" class="contact pull-left fa fa-facebook"></a>
-									<a href="#" class="contact pull-right fa fa-twitter"></a>
-								</div>
-							</div>
-							<h3>Cultura datera</h3>
-							<p>Experiencias de la comunidad que trabaja con datos abiertos.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="speaker">
-							<div class="speaker-info">
-								<div class="speaker-photo">
-									<img src="images/demo/speakers/speaker-05.jpg" alt="Speaker 5">
-								</div>
-								<div class="speaker-contacts">
-									<a href="#" class="contact pull-left fa fa-facebook"></a>
-									<a href="#" class="contact pull-right fa fa-twitter"></a>
-								</div>
-							</div>
-							<h3>Gobierno Abierto</h3>
-							<p>Lo que nos gusta y lo que no en el camino por abrir los Estados.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="speaker">
-							<div class="speaker-info">
-								<div class="speaker-photo">
-									<img src="images/demo/speakers/speaker-06.jpg" alt="Speaker 6">
-								</div>
-								<div class="speaker-contacts">
-									<a href="#" class="contact pull-left fa fa-facebook"></a>
-									<a href="#" class="contact pull-right fa fa-twitter"></a>
-								</div>
-							</div>
-							<h3>Transparencia</h3>
-							<p>Datos abiertos como herramienta al servicio de la transparencia</p>
-						</div>
-					</div>
-					<div class="text-center margin-top col-md-12 col-sm-12"><h4>¿Y a ti qué temas te gustaría tratar en #Abrelatam15? <a class="btn btn-small" href="https://docs.google.com/forms/d/1zyHKzLfII1Y6D-LIasFO07rEMUe3KeYpY5EoeuNwjDk/viewform" target="_blank">Cuéntanos</a></h4></div>
-				</section>
-				<!--==========-->
-
-
-				<section id="news" class="row">
-					<div class="col-md-12 col-sm-12">
-						<div class="section-header text-center">
-							<h2>Noticias</h2>
-							<h4>Que esta pasando con los datos abiertos en el mundo</h4>
-						</div>
-						<div class="text-width">
-							{% include feed-noticias.html %}
-						</div>
-					</div>
-				</section>
-
-
-				<!--===============================-->
-				<!--== FAQ ========================-->
-				<!--===============================-->
 				<section id="faq" class="row">
-					<div class="col-sm-12">
-
-						<div class="section-header text-right">
-							<h2>Preguntas Frecuentes</h2>
-							<h4>Lo que necesitas saber sobre nosotros</h4>
-						</div>
-					</div>
 					<div class="col-sm-6">
 						<ul class="accordion-group">
 						    <li class="accordion">
@@ -297,7 +146,161 @@ layout: default
 						</ul>
 					</div>
 				</section>
+
+				<section id="subscribe" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-left">
+							<h2>Suscríbete</h2>
+							<h4>Recibe toda la información y novedades de la desconferencia 2015</h4>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						{% include subscribe-form.html %}
+					</div>
+				</section>
+
+				<!--===============================-->
+				<!--== Blog =======================-->
+				<!--===============================-->
+				<section id="blog" class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="section-header text-center">
+							<h2>Blog</h2>
+							<h4>Que esta pasando en la Comunidad AbreLatam</h4>
+						</div>
+						<div class="text-width">
+							{% include feed-blog.html %}
+						</div>
+					</div>
+				</section>
+
+
+				<!--===============================-->
+				<!--== Speakers ===================-->
+				<!--===============================-->
+				<section id="speakers" class="separated">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="section-header text-center">
+								<h2>Temas</h2>
+								<h4>Estos son sólo algunos de los temas que vamos a tratar en #Abrelatam15</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="speaker">
+								<div class="speaker-info">
+									<div class="speaker-photo">
+										<img src="images/demo/speakers/speaker-01.jpg" alt="Speaker 1">
+									</div>								
+									<div class="speaker-contacts">
+										<a href="#" class="contact pull-left fa fa-facebook"></a>
+										<a href="#" class="contact pull-right fa fa-twitter"></a>
+									</div>
+								</div>
+								<h3>Apertura de datos</h3>
+								<p>Estrategias y experiencias para que los gobiernos abran sus datos.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="speaker">
+								<div class="speaker-info">
+									<div class="speaker-photo">
+										<img src="images/demo/speakers/speaker-02.jpg" alt="Speaker 2">
+									</div>
+									<div class="speaker-contacts">
+										<a href="#" class="contact pull-left fa fa-facebook"></a>
+										<a href="#" class="contact pull-right fa fa-twitter"></a>
+									</div>
+								</div>
+								<h3>Bases de datos</h3>
+								<p>Calidad, formato y periodicidad de los datos.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="speaker">
+								<div class="speaker-info">
+									<div class="speaker-photo">
+										<img src="images/demo/speakers/speaker-03.jpg" alt="Speaker 3">
+									</div>
+									<div class="speaker-contacts">
+										<a href="#" class="contact pull-left fa fa-facebook"></a>
+										<a href="#" class="contact pull-right fa fa-twitter"></a>
+									</div>
+								</div>
+								<h3>Financiamiento</h3>
+								<p>Claves para emprender con un proyecto de datos abiertos.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="speaker">
+								<div class="speaker-info">
+									<div class="speaker-photo">
+										<img src="images/demo/speakers/speaker-04.jpg" alt="Speaker 4">
+									</div>
+									<div class="speaker-contacts">
+										<a href="#" class="contact pull-left fa fa-facebook"></a>
+										<a href="#" class="contact pull-right fa fa-twitter"></a>
+									</div>
+								</div>
+								<h3>Cultura datera</h3>
+								<p>Experiencias de la comunidad que trabaja con datos abiertos.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="speaker">
+								<div class="speaker-info">
+									<div class="speaker-photo">
+										<img src="images/demo/speakers/speaker-05.jpg" alt="Speaker 5">
+									</div>
+									<div class="speaker-contacts">
+										<a href="#" class="contact pull-left fa fa-facebook"></a>
+										<a href="#" class="contact pull-right fa fa-twitter"></a>
+									</div>
+								</div>
+								<h3>Gobierno Abierto</h3>
+								<p>Lo que nos gusta y lo que no en el camino por abrir los Estados.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="speaker">
+								<div class="speaker-info">
+									<div class="speaker-photo">
+										<img src="images/demo/speakers/speaker-06.jpg" alt="Speaker 6">
+									</div>
+									<div class="speaker-contacts">
+										<a href="#" class="contact pull-left fa fa-facebook"></a>
+										<a href="#" class="contact pull-right fa fa-twitter"></a>
+									</div>
+								</div>
+								<h3>Transparencia</h3>
+								<p>Datos abiertos como herramienta al servicio de la transparencia</p>
+							</div>
+						</div>
+						<div class="text-center margin-top col-md-12 col-sm-12"><h4>¿Y a ti qué temas te gustaría tratar en #Abrelatam15? <a class="btn btn-small" href="https://docs.google.com/forms/d/1zyHKzLfII1Y6D-LIasFO07rEMUe3KeYpY5EoeuNwjDk/viewform" target="_blank">Cuéntanos</a></h4></div>
+					</div>
+				</section>
 				<!--==========-->
+
+				<!--===============================-->
+				<!--== News ===================-->
+				<!--===============================-->
+				<section id="news" class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="section-header text-center">
+							<h2>Noticias</h2>
+							<h4>Que esta pasando con los datos abiertos en el mundo</h4>
+						</div>
+						<div class="text-width">
+							{% include feed-noticias.html %}
+						</div>
+					</div>
+				</section>
+
+				
 				<div id="gotop" class="gotop fa fa-arrow-up"></div>
 			</div>
 		</div>
@@ -308,19 +311,23 @@ layout: default
 				<div class="container box">
 
 					<section id="info" class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-8">
 
 							<!--== Social Icons ==-->
 							<ul class="social-icons">
-								<li><a href="https://www.facebook.com/ABRELATAM" class="fa fa-facebook"></a></li>
-								<li><a href="https://twitter.com/abrelatam" class="fa fa-twitter"></a></li>
-								<li><a href="https://www.youtube.com/user/abrelatam" class="fa fa-youtube"></a></li>
+								<li><a href="#" class="fa fa-facebook"></a></li>
+								<li><a href="#" class="fa fa-twitter"></a></li>
+								<li><a href="#" class="fa fa-google-plus"></a></li>
+								<li><a href="#" class="fa fa-youtube"></a></li>
+								<li><a href="#" class="fa fa-instagram"></a></li>
+								<li><a href="#" class="fa fa-pinterest"></a></li>
+								<li><a href="#" class="fa fa-linkedin"></a></li>
 							</ul>
 
 						</div>
-						<div class="col-sm-6 text-right">
+						<div class="col-sm-4 text-right">
 							<div class="copyrights">
-								Invitan: <a href="http://ciudadanointeligente.org/"><img src="{{ site.baseurl }}/images/fci-footer.png"></a><a href="http://condatos.org/"><img src="{{ site.baseurl }}/images/condatos-footer.png"></a>
+								All Rights Reserved. © 2014
 							</div>
 						</div>
 					</section>
@@ -330,28 +337,7 @@ layout: default
 		</footer>
 
 		<!--== Javascript Files ==-->
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-    <script>
-			function initialize() {
-			  var myLatlng = new google.maps.LatLng(-33.438197, -70.638064);
-			  var mapOptions = {
-			    zoom: 15,
-			    center: myLatlng
-			  }
-			  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-
-			  var marker = new google.maps.Marker({
-			      position: myLatlng,
-			      map: map,
-			      title: 'Hello World!'
-			  });
-			}
-
-			google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
-
+		
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.scrollTo.js"></script>
 		<script src="js/jquery.nav.js"></script>

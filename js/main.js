@@ -2,7 +2,8 @@
     "use strict";
 
     ///////////////////////////////////////////////////// Your
-    var venueAddress = "Grand Place, 1000, Brussels"; // Venue
+    var venueAddress = "Liber Bernardo O'Higgins 227, Santiago"; // Venue
+    var placeName = "Centro Gabriela Mistral";
     /////////////////////////////////////////////////// Adress
 
     var fn = {
@@ -26,7 +27,7 @@
         // Google Maps
         GoogleMaps: function () {
 
-            var markerInfo = "<h4>" + venueAddress + "</h4>";
+            var markerInfo = "<h4>" + placeName + "</h4>";
             $("#map_canvas").gmap3({
                 map: {
                     options: {
@@ -46,6 +47,7 @@
                     }
                 },
                 infowindow: {
+                    title: placeName,
                     address: venueAddress,
                     options: {
                         content: markerInfo
