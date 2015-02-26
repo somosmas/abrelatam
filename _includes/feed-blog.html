@@ -1,0 +1,19 @@
+<script type="text/javascript" src="//momentjs.com/downloads/moment.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.rss.js"></script>
+
+<script type="text/javascript">
+jQuery(function($) {
+    $("#result").rss(
+        "http://blog.abrelatam.org/feed/", 
+        {
+            layoutTemplate: '<ul class="list-unstyled">{entries}</ul>',
+            entryTemplate: '<li><h3><a href="{url}" target="_blank">{title}</h3></a><p>{shortBodyPlain}</p></li>',
+            limit: 5,
+            outputMode: 'json_xml'
+        }
+    )
+})
+</script>
+
+<div id="result"></div>
+

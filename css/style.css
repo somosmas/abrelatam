@@ -11,7 +11,7 @@ div.fancy-select ul.options li.selected, div.fancy-select ul.options li.selected
 	background-color: #ABED68; /* <- Paste here your prefered color */
 }
 
-a, .accordion-heading span, .speaker-contacts > .contact, 
+.accordion-heading span, .speaker-contacts > .contact, 
 .table-features li.fa-check-circle, .owl-btn.prev,
 .owl-btn.next, div.fancy-select ul.options li.hover {
 	color: #ABED68; /* <- Paste here your prefered color */
@@ -21,7 +21,6 @@ a, .accordion-heading span, .speaker-contacts > .contact,
 .social-icons li a:hover, .gotop:hover, .speaker-contacts > .contact:hover {
 	border-color: #ABED68; /* <- Paste here your prefered color */
 }
-
 
 
 /*--------------------
@@ -46,10 +45,11 @@ a, a:hover, a:active, a:focus {
 
 a {
     text-decoration:none;
+    color: #0ECABF;
 }
 
 a:hover {
-	color: #bbbac0;
+	color: #4A81EE;
     text-decoration:none;
 }
 
@@ -146,18 +146,52 @@ input[type='submit'] {
 	font-size: 2.5rem;
 	color: #ffffff;
 	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-	transition: all 0.1s;
-	-moz-transition: all 0.1s;
-	-webkit-transition: all 0.1s;
-	-o-transition: all 0.1s; 
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s; 
 }
 
-input[type='submit']:hover {
-	opacity: 0.9;
+input[type='submit']:hover, input[type='submit']:active {
+	background-color: #0ECABF;
 }
 
-input[type='submit']:active {
-	border-bottom: 1px solid #b85146;
+.btn {
+	height: 6rem;
+	font-size: 2.5rem;
+	color: #ffffff;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	background-color: #ABED68;
+	border-radius: 5px;
+	padding: 1rem 1.5rem;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.btn:hover {
+	background-color: #0ECABF;
+	color: #FFFFFF;
+}
+
+.btn-small {
+	padding: 7px 14px;
+	font-size: 20px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+	height: 4rem;
+}
+
+.text-width {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.margin-top {
+	margin-top: 60px;
 }
 
 .box {
@@ -252,7 +286,7 @@ input[type='submit']:active {
 
 .content section#features:first-child {
 	padding: 40px 0;
-	border-bottom: 1px solid #F0F0F0;
+	border-bottom: 2px solid #efefef;
 }
 
 .content section + section:before {

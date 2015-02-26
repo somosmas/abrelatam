@@ -1,0 +1,40 @@
+<!-- Despliegue de posts en acordion -->
+<!-- 						<div class="section-header">
+							<h2>Recursos</h2>
+							<h4>ALVI: bajada de recursos</h4>
+						</div>
+					</div>
+
+						<div class="col-sm-6">
+						  <ul class="accordion-group">
+				  			{% for post in site.categories.recursos-right %}
+							    	<li class="accordion">
+							    		<a class="accordion-heading">
+							        	<h4 class="accordion-title">{{ post.title }}</h4>
+					              <p class="meta">{{ post.date | date_to_string }}</p>
+							        	<span class="fa fa-plus-circle pull-right"></span>
+							        </a>
+							        <div class="accordion-body">
+							        	{{ post.content }}
+							        </div>
+									</li>
+								{% endfor %}
+						  </ul>
+						</div>
+
+						<div class="col-sm-6">
+						  <ul class="accordion-group">
+				  			{% for post in site.categories.recursos-left %}
+							    	<li class="accordion">
+							    		<a class="accordion-heading">
+							        	<h4 class="accordion-title">{{ post.title }}</h4>
+					              <p class="meta">{{ post.date | date_to_string }}</p>
+							        	<span class="fa fa-plus-circle pull-right"></span>
+							        </a>
+							        <div class="accordion-body">
+							        	{{ post.content }}
+							        </div>
+									</li>
+								{% endfor %}
+						  </ul>
+						</div> -->

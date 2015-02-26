@@ -2,79 +2,41 @@
 layout: default
 ---	
 
-<!DOCTYPE html>
-<html lang="en">
-	<body>
-		<header id="header">
-			<div id="menu" class="header-menu fixed">
-				<div class="container box">
-					<div class="row">
-						<nav role="navigation" class="col-sm-12">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
+<header id="header">
+	{% include menu.html %}
 
-								<!--== Logo ==-->
-								<span class="navbar-brand logo">
-									<img src="{{ site.baseurl }}/images/logo-abrelatam.png">
-								</span>
-
-							</div>
-							<div class="navbar-collapse collapse">
-
-								<!--== Navigation Menu ==-->
-								<ul class="nav navbar-nav">
-									<li class="current"><a href="#header">Inicio</a></li>
-									<li><a href="#schedule">Agenda</a></li>
-									<li><a href="#subscribe">Suscríbete</a></li>
-									<li><a href="#speakers">Temas</a></li>
-									<li><a href="#faq">Recursos</a></li>
-									<li><a href="#partners">Partners</a></li>
-									<li><a href="#register">Regístrate</a></li>
-								</ul>
-
-							</div>
-						</nav>
-					</div>
+	<!--== Site Description ==-->
+	<div class="header-cta">
+		<div class="container">
+			<div class="row">
+				<div class="blk">
+					<h1>Un encuentro abierto<br/>Por una región abierta</h1>
 				</div>
 			</div>
-
-			<!--== Site Description ==-->
-			<div class="header-cta">
-				<div class="container">
-					<div class="row">
-						<div class="blk">
-							<h1>Un encuentro abierto<br/>Por una región abierta</h1>
-						</div>
-					</div>
-					<!-- Boton para ir a registrarse -->
+			<!-- Boton para ir a registrarse -->
 <!-- 					<div class="row">
-						<div class="blk">
-							<input type="submit" value="Register" name="submit" id="goregister">
-						</div>
-					</div> -->
+				<div class="blk">
+					<input type="submit" value="Register" name="submit" id="goregister">
 				</div>
-			</div>
+			</div> -->
+		</div>
+	</div>
 
-			<div class="header-bg">
-				<div id="preloader">
-					<div class="preloader"></div>
-				</div>
-				<div class="main-slider" id="main-slider">
+	<div class="header-bg">
+		<div id="preloader">
+			<div class="preloader"></div>
+		</div>
+		<div class="main-slider" id="main-slider">
 
-					<!--== Main Slider ==-->
-					<ul class="slides">
-						<li><img src="images/demo/bg-slide-01.jpg" alt="Slide Image"/></li>
-						<li><img src="images/demo/bg-slide-02.jpg" alt="Slide Image 2"/></li>
-					</ul>
+			<!--== Main Slider ==-->
+			<ul class="slides">
+				<li><img src="images/demo/bg-slide-01.jpg" alt="Slide Image"/></li>
+				<li><img src="images/demo/bg-slide-02.jpg" alt="Slide Image 2"/></li>
+			</ul>
 
-				</div>
-			</div>
-		</header>
+		</div>
+	</div>
+</header>
 
 		<div class="content">
 			<div class="container box">
@@ -97,7 +59,7 @@ layout: default
 						<div class="event-info">
 							<div class="icon fa fa-calendar"></div>
 							<div class="info">
-								<h3>7 y 8 de Septiembre</h3>
+								<h3>7 y 8 de Sept.</h3>
 								<span>2015</span>
 							</div>
 						</div>
@@ -106,8 +68,8 @@ layout: default
 						<div class="event-info">
 							<div class="icon fa fa-microphone"></div>
 							<div class="info">
-								<h3>Desconferencia de datos abiertos</h3>
-								<span>Best specialists.</span>
+								<h3>Desconferencia</h3>
+								<span>De datos abiertos</span>
 							</div>
 						</div>
 					</div>
@@ -115,222 +77,44 @@ layout: default
 						<div class="event-info">
 							<div class="icon fa fa-users"></div>
 							<div class="info">
-								<h3>Encuentro de la sociedad civil latinoamericana</h3>
+								<h3>Sociedad civil</h3>
+								<span>Latinoamericana</span>
 							</div>
 						</div>
 					</div>
 				</section>
-				<div class="social">
-							<ul class="social-icons">
-								<li><div class="fb-share-button" data-href="http://abrelatam.org/" data-layout="button_count"></div></li>
-								<li><a class="twitter-share-button" data-text="#Abrelatam15 un encuentro abierto por una región abierta | 7 y 8 de Sept." data-via="abrelatam" href="https://twitter.com/share">Tweet</a></li>
-							</ul>
-				</div>
 
-				<script>
-				window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
-				</script>
-				<div id="fb-root"></div>
-				<script>(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
-				<!--==========-->
+				{% include share-buttons.html %}
 
-
-
-				<!--===============================-->
-				<!--== Schedule ===================-->
-				<!--===============================-->
-				<section id="schedule" class="row">
-					<div class="col-md-7 col-sm-12">
-						<div class="content-tabs">
-							<ul class="nav nav-tabs">
-							  <li class="active"><a href="#tab1" data-toggle="tab">Día 1</a></li>
-							  <li><a href="#tab2" data-toggle="tab">Día 2</a></li>
-							</ul>
-
-							<div class="tab-content">
-								<div class="tab-pane active" id="tab1">
-									<ul class="accordion-group">
-									    <li class="accordion">
-									        <a class="accordion-heading">
-									        	<time>10:30</time>
-									        	<h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
-									        	<span class="fa fa-plus-circle pull-right"></span>
-									        </a>
-									        <div class="accordion-body">
-									        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-									        </div>
-									    </li>
-									    <li class="accordion">
-									        <a class="accordion-heading">
-									        	<time>12:30</time>
-									        	<h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
-									        	<span class="fa fa-plus-circle pull-right"></span>
-									        </a>
-									        <div class="accordion-body">
-									        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-									        </div>
-									    </li>
-									    <li class="accordion">
-									        <a class="accordion-heading">
-									        	<time>14:00</time>
-									        	<h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
-									        	<span class="fa fa-plus-circle pull-right"></span>
-									        </a>
-									        <div class="accordion-body">
-									        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-									        </div>
-									    </li>
-									</ul>
-								</div>
-								<div class="tab-pane" id="tab2">
-									<ul class="accordion-group">
-									    <li class="accordion">
-									        <a class="accordion-heading">
-									        	<time>11:30</time>
-									        	<h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
-									        	<span class="fa fa-plus-circle pull-right"></span>
-									        </a>
-									        <div class="accordion-body">
-									        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-									        </div>
-									    </li>
-									    <li class="accordion">
-									        <a class="accordion-heading">
-									        	<time>11:30</time>
-									        	<h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
-									        	<span class="fa fa-plus-circle pull-right"></span>
-									        </a>
-									        <div class="accordion-body">
-									        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-									        </div>
-									    </li>
-									    <li class="accordion">
-									        <a class="accordion-heading">
-									        	<time>11:30</time>
-									        	<h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
-									        	<span class="fa fa-plus-circle pull-right"></span>
-									        </a>
-									        <div class="accordion-body">
-									        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-									        </div>
-									    </li>
-									</ul>
-								</div>
-							</div>
+				<section id="blog" class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="section-header text-center">
+							<h2>Blog</h2>
+							<h4>Que esta pasando en la Comunidad AbreLatam</h4>
 						</div>
-					</div>
-					<div class="col-md-5 col-sm-12">
-						<h2>Sobre datos abiertos...</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, error, et. Cupiditate, necessitatibus, ab, nemo commodi quod unde facere doloribus voluptatibus recusandae quibusdam molestiae excepturi corrupti quae! Dolor, deserunt, consequuntur.</p>
-						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-							<li>Vero, deleniti, provident beatae illo accusantium</li>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-						</ul>
-					</div>
-				</section>
-				<!--==========-->
-
-
-
-				<!--===============================-->
-				<!--== Video ======================-->
-				<!--===============================-->
-<!-- 				<section id="video" class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-left">
-							<h2>Video</h2>
-							<h4>Awesome section description goes here.</h4>
-						</div>
-					</div>
-					<div class="col-md-7 col-sm-12">
-						<div class="video">
-							<iframe width="560" height="315" src="http://www.youtube.com/embed/LuyBGkbzTjs" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
-					<div class="col-md-5 col-sm-12">
-						<h3>Lorem ipsum</h3>
-						<hr/>
-						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quos, ratione, optio, blanditiis deserunt saepe iure sunt odit atque eius voluptatum labore excepturi explicabo aliquid sapiente porro voluptas commodi sint?</h4>
-						<hr/>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quas, quibusdam, impedit ducimus nisi fugiat veritatis cupiditate commodi</p>
-					</div>
-				</section> -->
-				<!--==========-->
-
-				
-
-				<!--===============================-->
-				<!--== Image Slider ===============-->
-				<!--===============================-->
-				<section id="image-slider" class="row">
-					<div class="col-sm-12">
-						<div class="section-header">
-							<h2>Comunidad</h2>
-							<h4>Awesome section description goes here.</h4>
-						</div>
-					</div>
-					<div class="col-md-5 col-sm-12">
-						<h3>Lorem ipsum</h3>
-						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quos, ratione, optio, blanditiis deserunt saepe iure sunt odit atque eius voluptatum labore excepturi explicabo aliquid sapiente porro voluptas commodi sint?</h4>
-						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quas, quibusdam, impedit ducimus nisi fugiat veritatis cupiditate commodi</blockquote>
-					</div>
-					<div class="col-md-7 col-sm-12">
-						<div class="flexslider">
-							<ul class="slides">
-								<li><img src="images/demo/slide-01.jpg" alt="Slide Image"/></li>
-								<li><img src="images/demo/slide-02.jpg" alt="Slide Image 2"/></li>
-							</ul>
+						<div class="text-width">
+						{% include feed-blog.html %}
 						</div>
 					</div>
 				</section>
-				<!--==========-->
 
-
-
-				<!--===============================-->
-				<!--== Subscribe Form =============-->
-				<!--===============================-->
 				<section id="subscribe" class="row">
 					<div class="col-sm-12">
 						<div class="section-header text-left">
-							<h2>Subscribe</h2>
-							<h4>Awesome section description goes here.</h4>
+							<h2>Suscríbete</h2>
+							<h4>Recibe toda la información y novedades.</h4>
 						</div>
 					</div>
-					<div class="col-sm-12">
-						<form id="subscribe-form" method="post" class="form">
-							<div class="col-sm-9 col-xs-12">
-								<input name="subscriber" id="subscriber" type="email" placeholder="Email" required>
-							</div>
-							<div class="col-sm-3 col-xs-12">
-								<input type="submit" value="Subscribe" name="submit">
-							</div>
-							<p class="form-notification" style="display: none;">Done!</p>
-						</form>
-					</div>
-					<div class="col-sm-12">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eaque dolorem fugiat ullam ea! Perspiciatis, ipsum ea possimus voluptatem sequi amet harum dolores commodi eveniet earum est expedita error ab.</p>
+					<div class="col-sm-12">					
+						{% include subscribe-form.html %}
 					</div>
 				</section>
-				<!--==========-->
 
-
-
-				<!--===============================-->
-				<!--== Speakers ===================-->
-				<!--===============================-->
 				<section id="speakers" class="row separated">
 					<div class="col-sm-12">
 						<div class="section-header text-center">
 							<h2>Temas</h2>
-							<h4>Awesome section description goes here.</h4>
+							<h4>Estos son sólo algunos de los temas que vamos a tratar en #Abrelatam15</h4>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -344,8 +128,8 @@ layout: default
 									<a href="#" class="contact pull-right fa fa-twitter"></a>
 								</div>
 							</div>
-							<h3>Jane Doe</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<h3>Apertura de datos</h3>
+							<p>Estrategias y experiencias para que los gobiernos abran sus datos.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -359,8 +143,8 @@ layout: default
 									<a href="#" class="contact pull-right fa fa-twitter"></a>
 								</div>
 							</div>
-							<h3>Michele Doe</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<h3>Bases de datos</h3>
+							<p>Calidad, formato y periodicidad de los datos.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -374,8 +158,8 @@ layout: default
 									<a href="#" class="contact pull-right fa fa-twitter"></a>
 								</div>
 							</div>
-							<h3>John Doe</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<h3>Financiamiento</h3>
+							<p>Claves para emprender con un proyecto de datos abiertos.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -389,8 +173,8 @@ layout: default
 									<a href="#" class="contact pull-right fa fa-twitter"></a>
 								</div>
 							</div>
-							<h3>Nick Doe</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<h3>Cultura datera</h3>
+							<p>Experiencias de la comunidad que trabaja con datos abiertos.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -404,8 +188,8 @@ layout: default
 									<a href="#" class="contact pull-right fa fa-twitter"></a>
 								</div>
 							</div>
-							<h3>Valerie Doe</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod tempor</p>
+							<h3>Gobierno Abierto</h3>
+							<p>Lo que nos gusta y lo que no en el camino por abrir los Estados.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -419,13 +203,26 @@ layout: default
 									<a href="#" class="contact pull-right fa fa-twitter"></a>
 								</div>
 							</div>
-							<h3>Mike Doe</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<h3>Transparencia</h3>
+							<p>Datos abiertos como herramienta al servicio de la transparencia</p>
 						</div>
 					</div>
+					<div class="text-center margin-top col-md-12 col-sm-12"><h4>¿Y a ti qué temas te gustaría tratar en #Abrelatam15? <a class="btn btn-small" href="https://docs.google.com/forms/d/1zyHKzLfII1Y6D-LIasFO07rEMUe3KeYpY5EoeuNwjDk/viewform" target="_blank">Cuéntanos</a></h4></div>
 				</section>
 				<!--==========-->
 
+
+				<section id="news" class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="section-header text-center">
+							<h2>Noticias</h2>
+							<h4>Que esta pasando con los datos abiertos en el mundo</h4>
+						</div>
+						<div class="text-width">
+							{% include feed-noticias.html %}
+						</div>
+					</div>
+				</section>
 
 
 				<!--===============================-->
@@ -433,49 +230,7 @@ layout: default
 				<!--===============================-->
 				<section id="faq" class="row">
 					<div class="col-sm-12">
-<<<<<<< HEAD
-=======
-<!-- Despliegue de posts en acordion -->
-<!-- 						<div class="section-header">
-							<h2>Recursos</h2>
-							<h4>ALVI: bajada de recursos</h4>
-						</div>
-					</div>
 
-						<div class="col-sm-6">
-						  <ul class="accordion-group">
-				  			{% for post in site.categories.recursos-right %}
-							    	<li class="accordion">
-							    		<a class="accordion-heading">
-							        	<h4 class="accordion-title">{{ post.title }}</h4>
-					              <p class="meta">{{ post.date | date_to_string }}</p>
-							        	<span class="fa fa-plus-circle pull-right"></span>
-							        </a>
-							        <div class="accordion-body">
-							        	{{ post.content }}
-							        </div>
-									</li>
-								{% endfor %}
-						  </ul>
-						</div>
-
-						<div class="col-sm-6">
-						  <ul class="accordion-group">
-				  			{% for post in site.categories.recursos-left %}
-							    	<li class="accordion">
-							    		<a class="accordion-heading">
-							        	<h4 class="accordion-title">{{ post.title }}</h4>
-					              <p class="meta">{{ post.date | date_to_string }}</p>
-							        	<span class="fa fa-plus-circle pull-right"></span>
-							        </a>
-							        <div class="accordion-body">
-							        	{{ post.content }}
-							        </div>
-									</li>
-								{% endfor %}
-						  </ul>
-						</div> -->
->>>>>>> FETCH_HEAD
 						<div class="section-header text-right">
 							<h2>Preguntas Frecuentes</h2>
 							<h4>Lo que necesitas saber sobre nosotros</h4>
@@ -535,8 +290,7 @@ layout: default
 						        </a>
 						        <div class="accordion-body">
 						        	<p>Ambos eventos esperan propuestas de sus participantes y eventualmente se comunicarán las formas en que los mismos pueden participar, sea presentando sesiones, paneles o formas no previstas. Lamentablemente ambos eventos tendrán un cupo de participantes máximo debido al espacio físico disponible.</p>
-
-									<p><strong>¿Hay recursos para poder financiar participantes?</p></strong>
+									<p><strong>¿Hay recursos para poder financiar participantes?</strong></p>
 									<p>Existen algunos recursos aunque limitados. Tendremos más información en las próximas semanas.</p>
 						        </div>
 						    </li>
@@ -544,125 +298,6 @@ layout: default
 					</div>
 				</section>
 				<!--==========-->
-
-
-
-				<!--===============================-->
-				<!--== Pricing Tables =============-->
-				<!--===============================-->
-<!-- 				<section id="prices" class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-left">
-							<h2>Pricing Tables</h2>
-							<h4>Awesome section description goes here.</h4>
-						</div>
-					</div>
-					<ul class="col-sm-3 pricing-features">
-						<li>Seat</li>
-						<li>Coffe Break</li>
-						<li>Certificate</li>
-					</ul>
-					<div class="col-md-3 col-sm-4">
-						<div class="pricing-table">
-							<h3 class="table-title">Silver</h3>
-							<div class="table-price">$99</div>
-							<ul class="table-features">
-								<li class="fa fa-check-circle"><span>Seat</span></li>
-								<li class="fa fa-minus-circle"><span>Coffe Break</span></li>
-								<li class="fa fa-minus-circle"><span>Certificate</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<div class="pricing-table">
-							<h3 class="table-title">Gold</h3>
-							<div class="table-price">$199</div>
-							<ul class="table-features">
-								<li class="fa fa-check-circle"><span>Seat</span></li>
-								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
-								<li class="fa fa-minus-circle"><span>Certificate</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4">
-						<div class="pricing-table">
-							<h3 class="table-title">Platinum</h3>
-							<div class="table-price">$299</div>
-							<ul class="table-features">
-								<li class="fa fa-check-circle"><span>Seat</span></li>
-								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
-								<li class="fa fa-check-circle"><span>Certificate</span></li>
-							</ul>
-						</div>
-					</div>
-				</section> -->
-				<!--==========-->
-
-
-				<!--===============================-->
-				<!--== Register ===================-->
-				<!--===============================-->
-				<section id="register" class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2>Regístrate</h2>
-							<h4>Nos vemos en Septiembre</h4>
-						</div>
-					</div>
-					<div class="col-sm-12">
-						<form id="register-form" method="post" class="form">
-							<div class="col-md-2 col-sm-6">
-								<input name="name" id="name" type="text" placeholder="Name" required>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<input name="email" id="email" type="email" placeholder="Email" required>
-							</div>
-							<div class="col-md-2 col-sm-6">
-								<input name="telephone" id="telephone" type="tel" placeholder="Telephone">
-							</div>
-							<div class="col-md-2 col-sm-6">
-								<select name="ticket" id="ticket">
-									<option value="Silver">Silver</option>
-									<option value="Gold">Gold</option>
-									<option value="Platinum">Platinum</option>
-								</select>
-							</div>
-							<div class="col-md-3 col-sm-12">
-								<input type="submit" value="Register" name="submit">
-							</div>
-							<p class="form-notification" style="display: none;">Registration Complete</p>
-						</form>
-					</div>
-				</section>
-				<!--==========-->
-
-								<!--===============================-->
-				<!--== Carousel ===================-->
-				<!--===============================-->
-				<section id="partners" class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2>Partners</h2>
-							<h4>Awesome section description goes here.</h4>
-						</div>
-					</div>
-					<div class="col-sm-12">
-						<div id="carousel" class="owl-carousel">
-							<div class="item"><img src="images/demo/partners/logo-01.png" alt="Logo 1"></div>
-							<div class="item"><img src="images/demo/partners/logo-02.png" alt="Logo 2"></div>
-							<div class="item"><img src="images/demo/partners/logo-03.png" alt="Logo 3"></div>
-							<div class="item"><img src="images/demo/partners/logo-04.png" alt="Logo 4"></div>
-							<div class="item"><img src="images/demo/partners/logo-05.png" alt="Logo 5"></div>
-							<div class="item"><img src="images/demo/partners/logo-06.png" alt="Logo 6"></div>
-						</div>
-						<div class="owl-carousel-navigation">
-							<a class="owl-btn prev fa fa-angle-left"></a>
-							<a class="owl-btn next fa fa-angle-right"></a>
-						</div>
-					</div>
-				</section>
-				<!--==========-->
-
 				<div id="gotop" class="gotop fa fa-arrow-up"></div>
 			</div>
 		</div>
@@ -680,10 +315,6 @@ layout: default
 								<li><a href="https://www.facebook.com/ABRELATAM" class="fa fa-facebook"></a></li>
 								<li><a href="https://twitter.com/abrelatam" class="fa fa-twitter"></a></li>
 								<li><a href="https://www.youtube.com/user/abrelatam" class="fa fa-youtube"></a></li>
-								<!-- <li><a href="#" class="fa fa-google-plus"></a></li> -->
-								<!-- <li><a href="#" class="fa fa-instagram"></a></li> -->
-								<!-- <li><a href="#" class="fa fa-pinterest"></a></li> -->
-								<!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
 							</ul>
 
 						</div>
@@ -721,7 +352,6 @@ layout: default
 
     </script>
 
-		<script src="js/jquery-2.1.0.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.scrollTo.js"></script>
 		<script src="js/jquery.nav.js"></script>
@@ -734,5 +364,3 @@ layout: default
 		<script src="js/fancySelect.js"></script>
 		<script src="js/main.js"></script>
 
-	</body>
-</html>
