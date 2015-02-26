@@ -88,14 +88,16 @@ layout: default
 
 				<section id="blog" class="row">
 					<div class="col-md-12 col-sm-12">
+						<div class="section-header text-center">
+							<h2>Blog</h2>
+							<h4>Que esta pasando en la Comunidad AbreLatam</h4>
+						</div>
+						<div class="text-width">
 						{% include feed-blog.html %}
+						</div>
 					</div>
 				</section>
 
-
-				<!--===============================-->
-				<!--== Subscribe Form =============-->
-				<!--===============================-->
 				<section id="subscribe" class="row">
 					<div class="col-sm-12">
 						<div class="section-header text-left">
@@ -107,13 +109,7 @@ layout: default
 						{% include subscribe-form.html %}
 					</div>
 				</section>
-				<!--==========-->
 
-
-
-				<!--===============================-->
-				<!--== Speakers ===================-->
-				<!--===============================-->
 				<section id="speakers" class="row separated">
 					<div class="col-sm-12">
 						<div class="section-header text-center">
@@ -211,14 +207,20 @@ layout: default
 							<p>Datos abiertos como herramienta al servicio de la transparencia</p>
 						</div>
 					</div>
-					<div class="text-center margin-top col-md-12 col-sm-12"><h4>¿Y a ti qué temas te gustaría tratar en #Abrelatam15? <a class="btn" href="https://docs.google.com/forms/d/1zyHKzLfII1Y6D-LIasFO07rEMUe3KeYpY5EoeuNwjDk/viewform">Cuéntanos</a></h4></div>
+					<div class="text-center margin-top col-md-12 col-sm-12"><h4>¿Y a ti qué temas te gustaría tratar en #Abrelatam15? <a class="btn btn-small" href="https://docs.google.com/forms/d/1zyHKzLfII1Y6D-LIasFO07rEMUe3KeYpY5EoeuNwjDk/viewform">Cuéntanos</a></h4></div>
 				</section>
 				<!--==========-->
 
 
 				<section id="news" class="row">
 					<div class="col-md-12 col-sm-12">
-						{% include feed-noticias.html %}
+						<div class="section-header text-center">
+							<h2>Noticias</h2>
+							<h4>Que esta pasando con los datos abiertos en el mundo</h4>
+						</div>
+						<div class="text-width">
+							{% include feed-noticias.html %}
+						</div>
 					</div>
 				</section>
 
