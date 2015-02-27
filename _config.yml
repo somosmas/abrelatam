@@ -1,12 +1,12 @@
 # site settings
 title: Abrelatam 2015
 # email: info@ciudadanointeligente.org
-description: "Un encuentro abierto, por una región abierta"
+description: "Un encuentro abierto, por una región abierta. 7 y 8 de septiembre, Santiago de Chile"
 baseurl: "http://2015.abrelatam.org/"
 # "http://abrelatam.org"
 twitter_username: abrelatam
 github_username:  ciudadanointeligente
-analytics: 'UA-60181338-1'
+analytics: 'UA-60198109-1'
 
 # build settings
 markdown: kramdown
