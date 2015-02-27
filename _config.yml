@@ -6,7 +6,7 @@ baseurl: "http://2015.abrelatam.org/"
 # "http://abrelatam.org"
 twitter_username: ciudadanoi
 github_username:  ciudadanointeligente
-# analytics: 'UA-41822715-1'
+analytics: 'UA-60181338-1'
 
 # build settings
 markdown: kramdown
