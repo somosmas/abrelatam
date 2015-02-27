@@ -185,6 +185,10 @@ input[type='submit']:hover, input[type='submit']:active {
 	height: 4rem;
 }
 
+.nodisplay {
+	display: none;
+}
+
 .text-width {
 	max-width: 800px;
 	margin: 0 auto;
