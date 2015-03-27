@@ -45,6 +45,11 @@
 	background: #efefef;
 	border-radius: 5px;
 	text-align: center;
+	height: 100px;
+}
+.owl-item .item h3 {
+	margin: 0;
+	  padding: 34px;
 }
 .owl-item .item > img {
 	max-width: 100%;
