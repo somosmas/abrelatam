@@ -102,6 +102,10 @@ blockquote {
 	margin: 1rem 0;
 }
 
+.strong {
+	font-weight: 800;
+}
+
 ul,ol {
 	font-size: 1.6rem;
 	line-height: 1.6em;
@@ -134,11 +138,17 @@ select {
 	color: #555555;
 }
 
+textarea {
+  height: 12rem;
+}
+
 select {
     cursor: pointer;
     line-height: 5.6rem;
     padding: 1.7rem 1.5rem;
     -webkit-appearance: menulist-button;
+	background: #A0A0A0;
+	color: #fff;
 }
 
 input[type='submit'] {
@@ -881,6 +891,10 @@ Forms ==============*/
     background: #efefef;
     border-radius: 5px;
 }
+/*
+.form .row {
+  background: #efefef;
+}*/
 
 .form-notification {
 	position: absolute;
@@ -897,6 +911,14 @@ Forms ==============*/
 	border: 2px solid #BBBAC0;
 }
 
+input[type="checkbox"], input[type="radio"] {
+  width: 20px;
+  height: 15px;
+}
+
+.ss-form-entry {
+  margin: 10px 0;
+}
 
 
 /*--------------------
