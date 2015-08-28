@@ -49,7 +49,7 @@ layout: default
 						<div class="event-info">
 							<div class="icon fa fa-map-marker"></div>
 							<div class="info">
-								<h3>Santiago, Chile.</h3>
+								<h3>GAM. Santiago, Chile.</h3>
 								<span>Av. Libertador Bernardo O'Higgins 227.</span>
 							</div>
 						</div>
@@ -86,67 +86,8 @@ layout: default
 
 				{% include share-buttons.html %}
 
-				<section id="faq" class="row">
-					<div class="col-sm-6">
-						<ul class="accordion-group">
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">¿Qué son datos abiertos?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	<p>Los datos abiertos (u open data en inglés) son datos que son libres de utilizar, reutilizar, y redistribuir. La definición completa contiene detalles precisos sobre el significado, pero a modo de resumen, se listan las características más importantes:</p>
-
-									<p> - <strong>Disponibilidad y Acceso:</strong> deben estar disponibles en su totalidad y a un costo de reproducción razonable, preferiblemente descargable de manera gratuita en Internet.</p>
-									<p> - <strong>Reutilización y Redistribución:</strong> debe ser posible realizar productos derivados, combinarlos con otras fuentes de información,  y distribuirlos de forma gratuita.</p>
-									<p> - <strong>Ausencia de restricción tecnológica:</strong> no debe haber ningún obstáculo tecnológico para acceder, reusar y redistribuir. Esto es posible realizarlo publicando los datos en un formato de datos abierto.</p>
-									<p>Nota: Formato abierto es un formato cuya especificación esté disponible públicamente y de manera gratuita, además, para su uso no se deben imponer restricciones de tipo monetario u otras.<p>
-
-									<p> - <strong>Participación universal:</strong> cualquier persona puede utilizar, reutilizar y redistribuir, sin restricciones en el campo de acción de los datos. Por ejemplo no es posible utilizar restricciones como “no comercial”, que impiden el uso comercial; o restricciones como “solo educativo”, que impone limitaciones de uso para ciertos fines.</p>
-									<p> Somos los ciudadanos los que tenemos la posibilidad de crear servicios de interés para la ciudadanía y/o el Gobierno. Éste debe fortalecer su rol como proveedor de información, para permitir así, que la sociedad pueda generar servicios a partir de la  reutilización de los datos abiertos disponibles. Dependiendo la naturaleza de los datos, el ciudadano que los reutilice debería tomar los recaudos necesarios para que a través del nuevo servicio o de la información generada se cumplen determinadas pautas tales como:</p>
-
-									<p> * El contenido de la información no es alterado.</p>
-									<p> * Que no se desnaturaliza el sentido de la información.</p>
-									<p> * Que se cita la fuente.</p>
-									<p> * Que se menciona la fecha de la última actualización.</p>
-						        </div>
-						    </li>
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">¿Qué es ABRELATAM y ConDatos?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	<p>ABRELATAM y ConDatos son los eventos donde la comunidad de actores de la sociedad civil, gobierno, academia, desarrolladores, empresas e individuos que trabajan para los Datos Abiertos en América Latina se encuentran para entablar un diálogo sobre el estado e impacto de datos abiertos en la región.</p>
-						        </div>
-						    </li>
-						</ul>
-					</div>
-					<div class="col-sm-6">
-						<ul class="accordion-group">
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">¿Cuál es el formato de estos eventos?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	<p><strong>ABRELATAM</strong> es una desconferencia donde diversos actores (gobierno, sociedad civil, expertos) participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos abiertos, privacidad y nuevas formas de trabajo con los datos.</p> 
-						        	<p><strong>ConDatos</strong> es una conferencia que reúne a los expertos e instituciones públicas, privadas y de la sociedad civil donde los principales actores de la región presentan, debaten y discuten sobre aspectos clave en materia de políticas de datos abiertos, gobierno abierto, innovación cívica para retos públicos, privacidad y nuevas formas de trabajo con datos abiertos.</p>
-						        </div>
-						    </li>
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">¿Cómo puedo participar?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	<p>Ambos eventos esperan propuestas de sus participantes y eventualmente se comunicarán las formas en que los mismos pueden participar, sea presentando sesiones, paneles o formas no previstas. Lamentablemente ambos eventos tendrán un cupo de participantes máximo debido al espacio físico disponible.</p>
-									<p><strong>¿Hay recursos para poder financiar participantes?</strong></p>
-									<p>Existen algunos recursos aunque limitados. Tendremos más información en las próximas semanas.</p>
-						        </div>
-						    </li>
-						</ul>
-					</div>
+				<section id="agenda">
+					{% include agenda.html %}
 				</section>
 
 
@@ -166,130 +107,14 @@ layout: default
 					</div>
 				</section>
 
-
-				<!--===============================-->
-				<!--== Speakers ===================-->
-				<!--===============================-->
-				<section id="speakers" class="separated">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="section-header text-center">
-								<h2>Temas</h2>
-								<h4>Estos son sólo algunos de los temas que vamos a tratar en #Abrelatam15</h4>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="speaker">
-								<div class="speaker-info">
-									<div class="speaker-photo">
-										<img src="images/demo/speakers/speaker-01.jpg" alt="Speaker 1">
-									</div>								
-<!-- 									<div class="speaker-contacts">
-										<a href="#" class="contact pull-left fa fa-facebook"></a>
-										<a href="#" class="contact pull-right fa fa-twitter"></a>
-									</div> -->
-								</div>
-								<h3>Apertura de datos</h3>
-								<p>Estrategias y experiencias para que los gobiernos abran sus datos.</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="speaker">
-								<div class="speaker-info">
-									<div class="speaker-photo">
-										<img src="images/demo/speakers/speaker-02.jpg" alt="Speaker 2">
-									</div>
-<!-- 									<div class="speaker-contacts">
-										<a href="#" class="contact pull-left fa fa-facebook"></a>
-										<a href="#" class="contact pull-right fa fa-twitter"></a>
-									</div> -->
-								</div>
-								<h3>Bases de datos</h3>
-								<p>Calidad, formato y periodicidad de los datos.</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="speaker">
-								<div class="speaker-info">
-									<div class="speaker-photo">
-										<img src="images/demo/speakers/speaker-03.jpg" alt="Speaker 3">
-									</div>
-<!-- 									<div class="speaker-contacts">
-										<a href="#" class="contact pull-left fa fa-facebook"></a>
-										<a href="#" class="contact pull-right fa fa-twitter"></a>
-									</div> -->
-								</div>
-								<h3>Financiamiento</h3>
-								<p>Claves para emprender con un proyecto de datos abiertos.</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="speaker">
-								<div class="speaker-info">
-									<div class="speaker-photo">
-										<img src="images/demo/speakers/speaker-04.jpg" alt="Speaker 4">
-									</div>
-<!-- 									<div class="speaker-contacts">
-										<a href="#" class="contact pull-left fa fa-facebook"></a>
-										<a href="#" class="contact pull-right fa fa-twitter"></a>
-									</div> -->
-								</div>
-								<h3>Cultura datera</h3>
-								<p>Experiencias de la comunidad que trabaja con datos abiertos.</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="speaker">
-								<div class="speaker-info">
-									<div class="speaker-photo">
-										<img src="images/demo/speakers/speaker-05.jpg" alt="Speaker 5">
-									</div>
-<!-- 									<div class="speaker-contacts">
-										<a href="#" class="contact pull-left fa fa-facebook"></a>
-										<a href="#" class="contact pull-right fa fa-twitter"></a>
-									</div> -->
-								</div>
-								<h3>Gobierno Abierto</h3>
-								<p>Lo que nos gusta y lo que no en el camino por abrir los Estados.</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="speaker">
-								<div class="speaker-info">
-									<div class="speaker-photo">
-										<img src="images/demo/speakers/speaker-06.jpg" alt="Speaker 6">
-									</div>
-<!-- 									<div class="speaker-contacts">
-										<a href="#" class="contact pull-left fa fa-facebook"></a>
-										<a href="#" class="contact pull-right fa fa-twitter"></a>
-									</div> -->
-								</div>
-								<h3>Transparencia</h3>
-								<p>Datos abiertos como herramienta al servicio de la transparencia</p>
-							</div>
-						</div>
-			<!-- 			<div class="text-center margin-top col-md-12 col-sm-12"><h4>¿Y a ti qué temas te gustaría tratar en #Abrelatam15? <a class="btn btn-small" href="https://docs.google.com/forms/d/1zyHKzLfII1Y6D-LIasFO07rEMUe3KeYpY5EoeuNwjDk/viewform" target="_blank">Cuéntanos</a></h4></div> -->
-					</div>
-				</section>
-				<!--==========-->
-
-
-				<!--===============================-->
-				<!--== News ===================-->
-				<!--===============================-->
+				<!--== Tips ===================-->
 				<section id="news" class="row">
 					<div class="col-md-12 col-sm-12">
 						<div class="section-header text-center">
-							<h2>Noticias</h2>
-							<h4>Que esta pasando con los datos abiertos en el mundo</h4>
+							<h2>Tips: ¡Lo que debes saber previo a tu llegada a Chile!</h2>
+							<h4>Mientras arreglas tus maletas para disfrutar de nuestro país, te dejamos algunos tips que debes saber antes de llegar.</h4>
 						</div>
-						<div class="text-width">
-							{% include feed-noticias.html %}
-						</div>
+							{% include tips.html %}
 					</div>
 				</section>
 
@@ -297,7 +122,6 @@ layout: default
 					{% include partners.html %}
 				</section>
 
-				
 				<div id="gotop" class="gotop fa fa-arrow-up"></div>
 			</div>
 		</div>
