@@ -2,7 +2,7 @@
     "use strict";
 
     ///////////////////////////////////////////////////// Your
-    var venueAddress = "Liber Bernardo O'Higgins 227, Santiago"; // Venue
+    var venueAddress = "Libertador Bernardo O'Higgins 227, Providencia, Santiago, Chile"; // Venue
     var placeName = "Centro Gabriela Mistral";
     /////////////////////////////////////////////////// Adress
 
