@@ -16,6 +16,9 @@
             fn.MainSliderAlign();
             fn.Navigation();
             fn.Carousel();
+            fn.Carousel2();
+            fn.Carousel3();
+            fn.Carousel4();
             fn.Slider();
             fn.RegisterForm();
             fn.SubscribeForm();
@@ -142,6 +145,69 @@
             });
 
             $(".prev").click(function () {
+                owl.trigger('owl.prev');
+            });
+        },
+
+        Carousel2: function () {
+            var owl = $("#carousel2");
+            owl.owlCarousel({
+                itemsCustom : [
+                    [1200, 2],
+                    [970, 2],
+                    [768, 2],
+                    [360, 1]
+                ],
+                navigation : false
+            });
+
+            $(".next2").click(function () {
+                owl.trigger('owl.next');
+            });
+
+            $(".prev2").click(function () {
+                owl.trigger('owl.prev');
+            });
+        },
+
+        Carousel3: function () {
+            var owl = $("#carousel3");
+            owl.owlCarousel({
+                itemsCustom : [
+                    [1200, 1],
+                    [970, 1],
+                    [768, 1],
+                    [360, 1]
+                ],
+                navigation : false
+            });
+
+            $(".next3").click(function () {
+                owl.trigger('owl.next');
+            });
+
+            $(".prev3").click(function () {
+                owl.trigger('owl.prev');
+            });
+        },
+
+        Carousel4: function () {
+            var owl = $("#carousel4");
+            owl.owlCarousel({
+                itemsCustom : [
+                    [1200, 1],
+                    [970, 1],
+                    [768, 1],
+                    [360, 1]
+                ],
+                navigation : false
+            });
+
+            $(".next4").click(function () {
+                owl.trigger('owl.next');
+            });
+
+            $(".prev4").click(function () {
                 owl.trigger('owl.prev');
             });
         },

@@ -72,10 +72,9 @@
 
 .owl-carousel-navigation { display: none; }
 
-.owl-btn.prev,
-.owl-btn.next {
+.owl-btn.prev, .owl-btn.next, .owl-btn.prev2, .owl-btn.next2, .owl-btn.prev3, .owl-btn.next3, .owl-btn.prev4, .owl-btn.next4 {
 	position: absolute;
-	top: 50%;
+	top: 66%;
 	display: block;
 	width: 2.5rem;
 	font-size: 3rem;
@@ -90,19 +89,18 @@
 	-o-transition: all 0.2s; 
 }
 
-.owl-btn.prev:hover,
-.owl-btn.next:hover {
+.owl-btn.prev:hover, .owl-btn.next:hover, .owl-btn.prev2:hover, .owl-btn.next2:hover  {
 	color: #ffffff;
 }
 
-.owl-btn.prev {
-	left: -57px;
+.owl-btn.prev, .owl-btn.prev2, .owl-btn.prev3, .owl-btn.prev4 {
+	left: 5px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
 
-.owl-btn.next {
-	right: -57px;
+.owl-btn.next, .owl-btn.next2, .owl-btn.next3, .owl-btn.next4 {
+	right: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
