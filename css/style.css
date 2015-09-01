@@ -3,7 +3,7 @@ Color Scheme =======*/
 
 input[type='submit'], .nav li.current a, .speaker-contacts > .contact:hover, 
 .social-icons li a:hover, .form-notification, .table-price, .gotop:hover, 
-.preloader div, .owl-btn.prev:hover, .owl-btn.next:hover,
+.preloader div, .owl-btn.prev:hover, .owl-btn.prev2:hover, .owl-btn.prev3:hover, .owl-btn.prev4:hover, .owl-btn.next:hover, .owl-btn.next2:hover, .owl-btn.next3:hover, .owl-btn.next4:hover,
 .flex-control-paging li a.flex-active, .flex-control-paging li a.flex-active:hover, 
 .owl-page.active span, .owl-page.active span:hover,
 .preloader, .preloader:before, .preloader:after, div.fancy-select div.trigger.open,
@@ -12,8 +12,8 @@ div.fancy-select ul.options li.selected, div.fancy-select ul.options li.selected
 }
 
 .accordion-heading span, .speaker-contacts > .contact, 
-.table-features li.fa-check-circle, .owl-btn.prev,
-.owl-btn.next, div.fancy-select ul.options li.hover {
+.table-features li.fa-check-circle, .owl-btn.prev, .owl-btn.prev2,
+.owl-btn.next, .owl-btn.next2, .owl-btn.next3, .owl-btn.next4, div.fancy-select ul.options li.hover {
 	color: #ABED68; /* <- Paste here your prefered color */
 }
 
@@ -838,6 +838,11 @@ Pricing Tables =====*/
 	color: #222222;
 }
 
+/*Partners*/
+
+#partners .row {
+	margin-bottom: 30px;
+}
 
 
 /*--------------------
