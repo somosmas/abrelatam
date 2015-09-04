@@ -277,6 +277,12 @@ input[type='submit']:hover, input[type='submit']:active {
 	overflow: hidden;
 }
 
+.header-bg-page {
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+}
+
 .header-bg:before {
 	top: 0;
 	position: absolute;
