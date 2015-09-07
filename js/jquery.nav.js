@@ -144,9 +144,10 @@
 			var $link = $(e.currentTarget);
 			var $parent = $link.parent();
 			var newLoc = '#' + self.getHash($link);
-			console.log($link)
-			console.log($parent)
 			if ($link[0].innerHTML=="Mapa 2014") {
+				window.location = $link[0].href;
+			};
+			if ($link[0].innerHTML=="Mapa 2015") {
 				window.location = $link[0].href;
 			};
 			
