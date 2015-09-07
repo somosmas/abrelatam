@@ -4,7 +4,35 @@ layout: default
 
 <header id="header">
       
-  {% include menu.html %}
+  <div id="menu" class="header-menu fixed">
+    <div class="container box">
+      <div class="row">
+        <nav role="navigation" class="col-sm-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <!--== Logo ==-->
+            <span class="navbar-brand logo">
+              <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/images/logo-abrelatam.png" style="width: 178px;"></a>
+            </span>
+
+          </div>
+          <div class="navbar-collapse collapse">
+
+            <!--== Navigation Menu ==-->
+            <ul class="nav navbar-nav">
+              <li><a href="{{ site.baseurl }}mapa.html" target="_blank">Mapa 2014</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 
   <div class="header-bg-page">
   </div>
