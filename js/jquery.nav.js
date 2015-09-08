@@ -150,6 +150,9 @@
 			if ($link[0].innerHTML=="Mapa 2015") {
 				window.location = $link[0].href;
 			};
+			if ($link[0].innerHTML=="Documentos") {
+				window.location = $link[0].href;
+			};
 			
 			if(!$parent.hasClass(self.config.currentClass)) {
 				//Start callback
