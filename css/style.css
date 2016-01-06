@@ -75,7 +75,7 @@ h4,h5 {
 }
 
 h1 {
-    font-size: 5.5rem;
+    font-size: 4rem;
 }
 
 h2 {
@@ -385,6 +385,8 @@ Header CTA ========*/
 	border-radius: 5px;
 	background: rgba(0, 0, 0, 0.5);
 	margin-top: 10px;
+	width: 100%;
+	text-align: center;
 }
 
 .header-cta h1 {
@@ -397,6 +399,9 @@ Header CTA ========*/
 	margin: 0;
 }
 
+.video-iframe{
+	text-align: center;
+}
 
 
 /*--------------------
@@ -721,27 +726,6 @@ Speaker's ==========*/
 .speaker-contacts > .contact:hover {
 	color: #ffffff;
 }
-
-
-
-/*--------------------
-Video ==============*/
-.video {
-	position: relative;
-	padding: 20px;
-	background: #efefef;
-	border-radius: 5px;
-}
-
-.video iframe {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 5;
-}
-
 
 
 /*--------------------
