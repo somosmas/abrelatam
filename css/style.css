@@ -273,7 +273,7 @@ input[type='submit']:hover, input[type='submit']:active {
 
 .header-bg {
 	position: relative;
-	height: 750px;
+	height: 980px;
 	overflow: hidden;
 }
 
@@ -376,7 +376,7 @@ Header CTA ========*/
 	width: 100%;
 	padding: 0 15px;
 	z-index: 50;
-	bottom: 120px;
+	bottom: 30px;
 }
 
 .header-cta .blk {
@@ -399,8 +399,27 @@ Header CTA ========*/
 	margin: 0;
 }
 
-.video-iframe{
-	text-align: center;
+.video{
+	position: relative;
+	overflow: hidden;
+}
+
+.video.iframe{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 80%;
 }
 
 

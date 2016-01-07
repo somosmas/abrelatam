@@ -4,7 +4,8 @@
 	.nav-tabs > li { width: 100%; }
 	.nav-tabs > li > a { width: 100%; }
 	.header-cta .blk { padding: 10px; }
-	.header-cta h1 { font-size: 4.5rem; }
+	.header-cta h1 { font-size: 2.5rem; }
+
 	.col-xs-6 { width: 100%; }
 
 }
@@ -28,6 +29,7 @@
 	.pricing-features { display: none; }
 
 	.header-bg { height: 550px; }
+	.header-cta h1 { font-size: 2.5rem; }
 
 }
 
@@ -47,8 +49,9 @@
 	.accordion { padding: 20px 30px; }
 
 	.pricing-features { display: none; }
-
 	.header-bg { height: 550px; }
+	.header-cta h1 { font-size: 2.5rem; }
+
 
 }
 
@@ -57,6 +60,7 @@
 	html { font-size: 58.5% }
 	
 	.header-bg { height: 650px; }
+	.header-cta h1 { font-size: 2.5rem; }
 
 	.table-features li span { display: none; }
 
@@ -65,6 +69,7 @@
 @media (min-width: 1200px) and (max-width: 1280px) {
 
 	.header-bg { height: 680px; }
+	.header-cta h1 { font-size: 2.5rem; }
 
  	.table-features li span { display: none; }
 
