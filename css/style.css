@@ -279,14 +279,16 @@ input[type='submit']:hover, input[type='submit']:active {
 }
 .header-bgo {
 	position: relative;
-	height: 200px;
+	height: 280px;
 	overflow: hidden;
+	margin-top: -70px
 }
 
 .header-bg-page {
 	position: relative;
-	height: 300px;
+	height: 100px;
 	overflow: hidden;
+	margin-top:-100px
 }
 
 .header-bg:before {
