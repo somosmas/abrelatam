@@ -2,8 +2,8 @@
     "use strict";
 
     ///////////////////////////////////////////////////// Your
-    var venueAddress = "Libertador Bernardo O'Higgins 227, Providencia, Santiago, Chile"; // Venue
-    var placeName = "Centro Gabriela Mistral";
+    var venueAddress = "Plaza de los Artesanos - Bogotá, Colombia"; // Venue
+    var placeName = "Plaza de los Artesanos - Bogotá";
     /////////////////////////////////////////////////// Adress
 
     var fn = {

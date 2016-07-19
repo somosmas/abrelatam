@@ -3,20 +3,20 @@
 					        var start = 10;
 					        function mas_articulos(){
 					            var ul = document.getElementById('articles');
-					            nro_li = 10;    
+					            nro_li = 10;
 					            var li = ul.children;
 
 					            // if( window.pageYOffset > min_scroll ) {
-					                
+
 					                for(x=0;x<10;x++) {
 					                    pos = start+x;
 					                    li[pos].classList.remove('nodisplay')
 					                    new_val = start+x
 					                }
 					                start = new_val
-					                
+
 					                min_scroll = min_scroll + 1000;
-					                
+
 					            // }
 					            return false;
 					        }
@@ -32,7 +32,7 @@
 							<script type="text/javascript">
 								window.onload = function() { init(); /*mas_articulos();*/ };
 
-								var public_spreadsheet_url = '//docs.google.com/spreadsheets/d/1uz6O5ZKV1DH05zIxYRPR5p6eZUGm3He7D2V6cUosOSc/pubhtml?gid=1754471053&single=true';
+								var public_spreadsheet_url = '//docs.google.com/spreadsheets/d/1QNT3NaFU0p0bxYkBhhywEAwPYo89DsjCsnKWITTSBKk/pubhtml?gid=0&single=true';
 
 								function init() {
 								Tabletop.init( { key: public_spreadsheet_url,
@@ -48,7 +48,7 @@
 
 									var cnt = 0;
 									data.forEach( function(key, value) {
-										
+
 										var el_li = document.createElement('li');
 										if(cnt>4)
 											el_li.classList.add('nodisplay')
@@ -66,7 +66,7 @@
 											h3.appendChild( url )
 										var p = document.createElement('p')
 											p.appendChild( document.createTextNode(key.content) )
-										
+
 										el_li.appendChild(h3)
 										p.appendChild(read_more)
 										el_li.appendChild(p)
@@ -80,5 +80,5 @@
 
 								var the_body = document.body; //getElementById('the_body');
 
-								
+
 							</script>
