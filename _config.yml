@@ -2,8 +2,8 @@
 title: Abrelatam 2016
 # email: info@ciudadanointeligente.org
 description: "Un encuentro abierto, por una región abierta. 7 y 8 de septiembre, Santiago de Chile"
-baseurl: "/abrelatam/"
-#baseurl: "http://2015.abrelatam.org/"
+#baseurl: "/abrelatam/"
+baseurl: "http://2016.abrelatam.org/"
 # "http://abrelatam.org"
 twitter_username: abrelatam
 github_username:  ciudadanointeligente
