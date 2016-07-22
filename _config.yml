@@ -2,8 +2,10 @@
 title: Abrelatam 2016
 # email: info@ciudadanointeligente.org
 description: "Un encuentro abierto, por una región abierta. 2,3 y 4 de noviembre, Bogotá D.C."
-baseurl: "/abrelatam/"
+#baseurl: "http://compromisos.somosmas.org/abrelatam/"
 #baseurl: "http://2016.abrelatam.org/"
+baseurl: "/abrelatam/"
+
 # "http://abrelatam.org"
 twitter_username: abrelatam
 github_username:  ciudadanointeligente
